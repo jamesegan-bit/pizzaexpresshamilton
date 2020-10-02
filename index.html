@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="js/jsmain.js"></script>
+
+  <title>Pizza Express Hamilton</title>
+</head>
+<body class="bg-dark" data-spy="scroll" data-target="#navbar-Menu" data-offset="250">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary navbar-main">
+    <div class="container">
+      
+      <button id="toTopBtn" class="btn shadow-none flex-fill" onclick="topFunction()" title="Go To Top"><img src="assets/cd-top-arrow.svg"></button>
+      <a class="navbar-brand" href="#"><img class="col-6" src="assets/logoPizzaExpress.png"></a>
+      <div>
+        <button type="button" class="btn btn-primary pb-2 ml-2 d-md-inline d-lg-none" data-toggle="modal" data-target="#orderModal">
+          ORDER
+        </button>
+        <button class="navbar-toggler shadow-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu-Pizzas" id="navbarDropdownPizzaMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+              Pizza
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownPizzaMenuLink">
+              <li><a class="dropdown-item" href="#menu-Pizza-Gourmet">Gourmet</a></li>
+              <li><a class="dropdown-item" href="#menu-Pizza-Regular">Regular</a></li>
+              <li><a class="dropdown-item" href="#menu-Pizza-Vegetarian">Vegetarian</a></li>
+              <li><a class="dropdown-item" href="#menu-Pizza-Starter">Starter</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu-Mains" id="navbarDropdownMainsMenulink" role="button" data-toggle="dropdown" aria-expanded="false">
+              Main
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMainsMenuLink">
+              <li><a class="dropdown-item" href="#menu-Mains-Burgers">Burgers</a></li>
+              <li><a class="dropdown-item" href="#menu-Mains-FishnChips">Fish & Chips</a></li>
+              <li><a class="dropdown-item" href="#menu-Mains-Salads">Salads</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu-Sides">Sides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu-Drinks">Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu-Deals">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary pb-2 ml-2 d-md-none d-lg-block" data-toggle="modal" data-target="#orderModal">
+          ORDER
+        </button>
+                
+      </div>
+
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="bg-header-pizza mt-3 py-5 d-flex justify-content-center position-relative">
+          <h1 class="font-weight-bold">Welcome</h1>
+        <img class="position-absolute halal-logo" src="assets/logoHalal.png" style="max-width:60px; height:auto;" alt="Halal" title="Halal"/>
+      </div>
+
+      <div class="container p-0 mt-3">
+        <div class="row">
+          <div class="col-8 col-lg-9">
+            <div class="row pizzas-menu">
+              <h2 class="text-primary" id="menu-Pizzas">Pizza</h2>
+              <div class="row gourmet-pizzas-menu">
+                <h3 id="menu-Pizza-Gourmet" class="mt-4 mb-3">Gourmet</h3>
+                <div class="d-flex justify-content-center mb-4 menu-pricing">
+                  <h4 class="mx-4"><span class="pr-2">9"</span> $11.99</h4>
+                  <h4 class="mx-4"><span class="pr-2">12"</span> $15.99</h4>
+                  <h4 class="mx-4"><span class="pr-2">18"</span> $30.99</h4>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p01.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Basil Pesto Chicken
+                      </h5>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken/beef/lamb, tomato base, basil pesto sauce, tomato, capsicum, blackpepper and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p02.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Butter Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Marinated butter chicken, red onion, roasted garlic, fresh coriander, chilli flakes and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p03.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Cajun Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted Cajun marinated chicken, red onion, mushrooms, roast garlic, brie cheese, mozzarella cheese with plum sauce.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p04.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Carnivore (Meat Lover)
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken, beef, pepperoni, onion, mushrooms and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p05.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Chef's Special
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken, onion, jalapenos, chilli flakes, BBQ sauce and mozarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p06.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Cranberry Chicken and Brie
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken, tomato base, cranberry sauce, spinach, brie cheese and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p07.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Peri Peri Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken/beef/lamb/prawns/paneer, peri peri sauce, mushroom, capsicum, onion and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p08.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Roast Masala Steak
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Marinated roasted beef with red onions, diced capsicum, fresh coriander and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p09.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Satay Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Satay Chicken, satay sauce, onion, tomato, chilli flakes, roasted garlic and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p10.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Tandoori Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken, apricot sauce, spinach, tomato, red onion and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p11.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Thai Prawns
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Marinated prawns/chicken, red onions, roasted garlic, chilli flakes, mushroom and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p12.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Yaun Special
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken/prawns, szechuan sauce, capsicum, sweet corn, roasted garlic, onion, black pepper and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 menu-item-L mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-4 d-sm-none d-md-block">
+                        <img class="card-img-top" src="assets/p01.png">
+                      </div>
+                      <div class="col-md-8 col-12">
+                        <div class="card-body hide-overflow">
+                          <h5 class="card-title">
+                            Create-A-Pizza
+                          </h5>
+                          <h6 class="card-subtitle mb-2 text-muted">
+                            
+                          </h6>
+                          <div>
+                            <p class="card-text text-muted">Choice of 2 meats: Chicken, beef, pepperoni, lamb.</p>
+                            <p class="card-text text-muted">Choice of 5 Toppings: Tomato, onion, mushrooms, capsicum, olives, pineapple, capers, jalapenos, spinach, roast garlic.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row regular-pizzas-menu">
+                <h3  id="menu-Pizza-Regular" class="mt-5 mb-3">Regular</h3>
+                <div class="d-flex justify-content-center mb-4 menu-pricing">
+                  <h4 class="mx-4"><span class="pr-2">9"</span> $10.50</h4>
+                  <h4 class="mx-4"><span class="pr-2">12"</span> $14.50</h4>
+                  <h4 class="mx-4"><span class="pr-2">18"</span> $28.50</h4>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p09.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        BBQ Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken/beef/lamb, BBQ sauce, tomato base, onions, tomato and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p02.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Hawaiian
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken/beef, plum sauce, pineapple and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p03.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Pepperoni
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Pepperoni, BBQ sauce, tomato base, tomato, capsicum and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p04.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Sausage Pizza
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Chicken sausage, BBQ sauce, tomato base, onion, capsicum, roasted garlic and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p05.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Spicy Italian
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Pepperoni, sweet chilli sauce, tomato base, chilli flakes, onion and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p06.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Traditional Vege
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Pineapple, plum sauce, tomato base, capsicum, onions and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row vege-pizzas-menu">
+                <h3  id="menu-Pizza-Vegetarian" class="mt-5 mb-3">Vegetarian</h3>
+                <div class="d-flex justify-content-center mb-4 menu-pricing">
+                  <h4 class="mx-4"><span class="pr-2">9"</span> $10.99</h4>
+                  <h4 class="mx-4"><span class="pr-2">12"</span> $14.99</h4>
+                  <h4 class="mx-4"><span class="pr-2">18"</span> $30.50</h4>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p07.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Basil Pesto
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Basil pesto, onion, sweet corn, capsicum, mushroom, spinach, olives, jalapenos and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p08.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        BBQ Paneer
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted paneer, BBQ sauce, tomato, onion, capsicum, roasted garlic and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p09.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Greek Style
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Apricot/Plum Sauce, tomato base, red onion, black olives, cherry tomato, spinach, black pepper, feta cheese and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p10.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Retreat
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Fresh paneer, apricot sauce, onion, olives, pineapple, capsicum, spinach, red paprika, jalapenos and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p11.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Paneer Coriander
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Homestyle paneer, tomato, onion, capsicum, fresh coriander and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p12.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Paneer Tikka Masala
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Homestyle paneer, tomato, onion, masala paste and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p01.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Tropical Paneer
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted paneer, plum sauce, tomato base, pineapple, sweet corn and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p02.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Vege
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Garlic sauce, tomato base, tomato, onion, pineapple, capsicum, mushroom, spinach and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row starter-pizzas-menu">
+                <h3  id="menu-Pizza-Starter" class="mt-5 mb-3">Starter Range</h3>
+                <div class="d-flex justify-content-center mb-1">
+                  <h4 class="mx-4"><span class="pr-2">9"</span> $7.50</h4>
+                  <h4 class="mx-4"><span class="pr-2">12"</span> $10.50</h4>
+                  <h4 class="mx-4"><span class="pr-2">18"</span> $21.99</h4>
+                </div>
+                <h6 class="text-muted mb-2 text-right">Extra cheese for $1.99</h6>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p03.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Americana
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Cherry tomato, garlic aioli sauce, tomato base, crushed garlic, herbs and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p04.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Cheese and Onion
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Onion, aioli sauce, tomato base and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p05.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Cheese Pizza
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Tomato base and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p06.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Cheesy Garlic Pizza
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Garlic aioli sauce, garlic base and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/p07.png">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Margherita
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Cherry tomato, aioli sauce, tomato base, roasted garlic and mozzarella cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row mains-menu">
+              <h2 id="menu-Mains" class="text-primary">Mains</h2>
+              <div class="row burgers-mains-menu">
+                <h3 id="menu-Mains-Burgers" class="mt-4 mb-3">Burgers</h3>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Beef Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $6.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Lean beef/lamb mince, salad, aioli and ketchup.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Beef & Pineapple Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.50
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Lean beef/lamb mince, pineapple salad, aioli and ketchup.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Chef Special
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $8.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Marinated chicken breast/beef/lamb/veg patty, onion, cheese, salad, aioli & apricot chutney.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Chicken Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Grilled chicken breast, salad, aioli and apricot chutney.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Chicken Avocado Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken breast, salad, avocado, aioli and apricot chutney.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Fish Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Battered fish with salad, cheese, aioli and tomato salsa.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Gourmet Peri Peri Chicken Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $8.50
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken breast, salad, aioli and peri peri sauce.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/burger01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Vege Burger
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $6.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Vege patty, salad, aioli and apricot chutney.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row fishnchips-mains-menu">
+                <h3 id="menu-Mains-FishnChips" class="mt-5 mb-4">Fish & Chips</h3>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/fnc01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Fish & Chips 1
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.00
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">1 x Fish</p>
+                        <p class="card-text text-muted">1 x Chips</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/fnc01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Fish & Chips 2
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $10.00
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">2 x Fish</p>
+                        <p class="card-text text-muted">1 x Chips</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/fnc01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Add Fish
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $3.00
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Add one fish to your meal.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row salads-mains-menu">
+                <h3 id="menu-Mains-Salads" class="mt-5 mb-4">Salads</h3>
+                <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/salad01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Greek
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $7.99
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Lettuce, mesclun, feta, fresh cucumber, tomato, olives, red onion, olive oil and balsamic dressing.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                  <div class="card">
+                    <div class="card-img-clip">
+                      <img class="card-img-top" src="assets/salad01.jpg">
+                    </div>
+                    <div class="card-body hide-overflow">
+                      <h5 class="card-title">
+                        Chicken
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        $8.50
+                      </h6>
+                      <div >
+                        <p class="card-text text-muted">Oven roasted chicken, lettuce, mesclun, fresh cucumber, tomato, capsicum, red onion, olive oil and balsamic dressing.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row sides-menu">
+              <h2 id="menu-Sides" class="text-primary">Sides</h2>
+              <div class="col-12 col-lg-4 menu-item mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Brownie with Chocolate Sauce
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $4.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Brownie may contain nuts.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Cajun Chicken Wings (4pcs)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $6.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Slow oven roasted juicy cajun spiced wings.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Chicken Drumsticks (3pcs)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $5.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Slow oven roasted juicy chicken pieces.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Chicken Nuggets (6pcs)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $3.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Slow oven roasted juicy chicken pieces.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Fries
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $3.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Oven baked fries with ailoi/ketchup.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Garlic Bread
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $4.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Garlic, aioli and mozzarella cheese.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Kumara Chips
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $4.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Oven baked chips with aioli/ketchup.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/side01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Wedges
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $4.99
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Seasened oven baked wedges with sour cream.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row drinks-menu">
+              <h2 id="menu-Drinks" class="text-primary">Drinks</h2>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      COKE Range (600ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $4.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Fanta, Fanta berry, Sprite, Coke, Diet Coke, L&P</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      COKE Range (300ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                       $2.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Fanta, Fanta berry, Sprite, Coke, Diet Coke, L&P</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Calci-Yum
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $1.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Chocolate Milk</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Fresh Up (355ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $3.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Crisp apple, Apple orange, Apple nectarine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Fresh Up (500ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $4.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Crisp apple, Apple orange, Apple nectarine</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Keri Juice (350ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $4.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Apple, Orange, Tropical</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Mexican Drinks
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $5.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Mandarin, Cola, Lima, Pineapple</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      PEPSI Range (1.5L)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $3.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Code Red, Live Wire, 7UP, Mountain Dew, Pepsi, Passionfruit, Max</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      PEPSI Range (600ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $2.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Code Red, Live Wire, 7UP, Mountain Dew, Pepsi, Passionfruit, Max</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      PEPSI Range (355ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $1.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Code Red, Live Wire, 7UP, Mountain Dew, Pepsi, Passionfruit, Max</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      V Drink (250ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $3.50
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">V Energy Drink</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      V Drink (500ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $5.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">V Energy Drink</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 menu-item  mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="card-img-clip">
+                    <img class="card-img-top" src="assets/drink01.jpg">
+                  </div>
+                  <div class="card-body hide-overflow">
+                    <h5 class="card-title">
+                      Water (600ml)
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      $3.00
+                    </h6>
+                    <div >
+                      <p class="card-text text-muted">Bottled Water</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row deals-menu">
+              <h2 id="menu-Deals" class="text-primary">Deals</h2>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Burger Combo
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $10.50
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">1 x Basic Burger</p>
+                          <p class="card-text text-muted">1 x Small Fries</p>
+                          <p class="card-text text-muted">1 x Soft Drink (300ml/355ml)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Combo 1
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $34.00
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">2 x 12" Regular Pizzas</p>
+                          <p class="card-text text-muted">1 x Soft Drink (1.5L)</p>
+                          <p class="card-text text-muted mb-0 pb-0">1 x Garlic Bread</p>
+                          <p class="card-text text-muted my-0">-or-</p>
+                          <p class="card-text text-muted">1 x 9" Garlic Pizza</p>
+                          <p class="card-text text-muted text-muted">Upgrade to Gourmet Pizza for $2<p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Combo 2
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $13.00
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">1 x 9" Regular Pizza</p>
+                          <p class="card-text text-muted">1 x Fries</p>
+                          <p class="card-text text-muted">1 x Soft Drink (300ml/355ml)<p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Family Combo
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $49.99
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">2 x 12" Gourmet Pizzas</p>
+                          <p class="card-text text-muted">1 x 12" Regular Pizzas</p>
+                          <p class="card-text text-muted">1 x Garlic Bread<p>
+                          <p class="card-text text-muted">1 x Soft Drink (1.5L)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Lunch Deal
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $10.00
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">1 x 9" Regular Pizzas</p>
+                          <p class="card-text text-muted">1 x Soft Drink (300ml/355ml)<p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Snack Box - Meaty
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          S: $7.99
+                        </h3>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          L: $12.99
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">2 x Meats of your choice</p>
+                          <p class="card-text text-muted">1 x Fries</p>
+                          <p class="card-text text-muted">3 x Sauces of your choice</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Snack Box - Paneer
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          S: $7.99
+                        </h3>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          L: $12.99
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">1 x Marinated Paneer</p>
+                          <p class="card-text text-muted">1 x Fries</p>
+                          <p class="card-text text-muted">3 x Sauces of your choice</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 menu-item-L mb-1 mb-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-4 d-sm-none d-md-block">
+                      <img class="card-img-top" src="assets/deal01.jpg">
+                    </div>
+                    <div class="col-md-8 col-12">
+                      <div class="card-img-clip">
+                      </div>
+                      <div class="card-body hide-overflow">
+                        <h5 class="card-title">
+                          Two Beef Burgers
+                        </h5>
+                        <h3 class="card-subtitle mb-2 text-muted">
+                          $10.00
+                        </h3>
+                        <div >
+                          <p class="card-text text-muted">2 x Beef Burgers</p>
+                          <p class="card-text text-muted">Everyday 11AM till 4PM<p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-us row">
+              <h2 class="text-primary">About Us</h2>
+              <div class="col-12 col-lg-8">
+                <p class="text-muted">The Pizza Express means passion for healthy high-level cooking, 
+                attention to detail, desire to create a uniquely elegant and 
+                innovative product. The Pizza Express is a young dynamic company, 
+                willing to set the benchmark in New Zealand street food scenario.</p>
+              </div>
+            </div>
+
+            <div id="location" class="row mt-3 mb-5">
+              <h2 class="text-primary mb-3">Location</h2>
+              <div class="col-12 border-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788.2489324881451!2d175.2978771292925!3d-37.79013983891279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18cf5208ed79%3A0xc2977b77557844c!2s123%20Clyde%20Street%2C%20Hamilton%20East%2C%20Hamilton%203216!5e0!3m2!1sen!2snz!4v1601260605601!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-4 col-lg-3 sticky-top p-2">
+            <div class="sticky-top">
+              <nav id="navbar-Menu" class="navbar navbar-light bg-dark mb-3 p-0">
+                <nav class="nav nav-pills flex-column p-2" style="width:100%;">
+                  <h4 class="text-primary mb-2 pl-2">Menu</h4>
+                  <a class="nav-link py-1 nav-pizza-parent active" href="#menu-Pizzas">Pizza</a>
+                  <nav class="nav nav-pills nav-nested flex-column">
+                    <a class="nav-link ml-3 my-1 py-1 active" href="#menu-Pizza-Gourmet">Gourmet</a>
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Pizza-Regular">Regular</a>
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Pizza-Vegetarian">Vegetarian</a>
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Pizza-Starter">Starter</a>
+                  </nav>
+                  <a class="nav-link py-1 nav-mains-parent" href="#menu-Mains">Mains</a>
+                  <nav class="nav nav-pills nav-nested flex-column">
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Mains-Burgers">Burgers</a>
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Mains-FishnChips">Fish & Chips</a>
+                    <a class="nav-link ml-3 my-1 py-1" href="#menu-Mains-Salads">Salads</a>
+                  </nav>
+                  <a class="nav-link py-1" href="#menu-Sides">Sides</a>
+                  <a class="nav-link py-1" href="#menu-Drinks">Drinks</a>
+                  <a class="nav-link py-1" href="#menu-Deals">Deals</a>
+                </nav>
+              </nav>
+              <div>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="card-title text-primary">
+                      Pick Up
+                    </h4>
+                    <p class="card-text text-muted">Make your order over the phone and pick up.</p>
+                    <h5 class="card-title">07 858 2222</h5>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h4 class="card-title text-primary">
+                      Delivery
+                    </h4>
+                    <p class="card-text text-muted">Order through the Uber Eats app to have Pizza Express delivered to your home.</p>
+                    <a class="btn uber-eats-button shadow-none" target="_blank" href="https://www.ubereats.com/nz/hamilton-nz/food-delivery/the-pizza-express!-hamilton/yLyeyiuNR5aQMWnKC32kHg?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhhbWlsdG9uJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSklUYW1oM1FpYlcwUkE1bWlRMkh2QUFVJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0zNy43ODkwODA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTc1LjI1OTY4NjUlN0Q%3D">Uber Eats</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="orderModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content row pt-1 pb-5 px-3">
+                <div class="col-12 mb-0">
+                  <h2 class="pt-3 text-center text-primary">Make an Order</h2>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                  <div class="col-6 pr-1">
+                    <h4>
+                      Pick Up
+                    </h4>
+                    <p class="text-muted">Make your order over the phone and pick up.</p>
+                    <h5 class="b-">07 858 2222</h5>
+                  </div>
+                  <div class="col-6 pl-2">
+                    <h4>
+                      Delivery
+                    </h4>
+                    <p class="text-muted">Order through the Uber Eats app to have Pizza Express delivered to your home.</p>
+                    <a class="btn uber-eats-button shadow-none" target="_blank" href="https://www.ubereats.com/nz/hamilton-nz/food-delivery/the-pizza-express!-hamilton/yLyeyiuNR5aQMWnKC32kHg?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhhbWlsdG9uJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSklUYW1oM1FpYlcwUkE1bWlRMkh2QUFVJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0zNy43ODkwODA0JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTc1LjI1OTY4NjUlN0Q%3D">Uber Eats</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-dark mt-5 footer" style="height: 50px;">
+    <div class="row">
+      <div class="col-4">
+        <p class="text-muted">Website developed with bootstrap by <a class="link-muted" href="http://www.jamesegan.me">jamesegan.me</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Popper.js and Bootstrap JS-->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
