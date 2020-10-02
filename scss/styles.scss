@@ -3,7 +3,7 @@ $text-muted: #c2c2c2;
 $light: #fdfdfd;
 $subtleLight: #e4e4e4;
 $primary: #ff624e;
-$secondary: #1e3685;
+$secondary: #232f55;
 $grey2: #495057;
 $dark: #343a40;
 
@@ -64,7 +64,12 @@ h1{
     color: darken($text-muted, 15%) !important;
 }
 .menu-pricing h4{
+    color: $text-muted;
+    font-weight: 100 !important;
+}
+.menu-pricing span{
     color: $subtleLight !important;
+    font-weight: 600;
 }
 
 .bg-header-pizza{
@@ -168,6 +173,9 @@ nav .nav{
 .nav-mains-parent.active + .nav-nested a{
     opacity:1;
     display:block;
+}
+.side-nav {
+    top:100px !important;
 }
 
 .navbar-toggler{
