@@ -35,9 +35,11 @@ if ("maxTouchPoints" in navigator) {
   }
 }
 
-document.getElementById("side-nav-bar").style.display = "none";
-
-var menuContainer = document.getElementById("menu-container");
-menuContainer.classList.remove("col-lg-9");
-menuContainer.classList.remove("col-8");
-menuContainer.classList.add("col-12");
+if (hasTouchScreen){
+  document.getElementById("side-nav-bar").style.display = "none";
+  
+  var menuContainer = document.getElementById("menu-container");
+  menuContainer.classList.remove("col-lg-9");
+  menuContainer.classList.remove("col-8");
+  menuContainer.classList.add("col-12");
+}
