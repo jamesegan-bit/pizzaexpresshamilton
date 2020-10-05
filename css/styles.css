@@ -210,6 +210,8 @@ nav .nav {
 @media (max-width: 768px) {
   .menu-item .card-img-top {
     display: none; }
+  .menu-item-L .card-img-top {
+    display: none; }
   .menu-item .card {
     padding-top: 50%;
     transition: 0s ease-in; }
