@@ -1,12 +1,12 @@
-mybutton = document.getElementById("toTopBtn");
+toTopbutton = document.getElementById("toTopBtn");
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    toTopbutton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    toTopbutton.style.display = "none";
   }
 }
 
@@ -34,5 +34,10 @@ if ("maxTouchPoints" in navigator) {
     );
   }
 }
-if (hasTouchScreen)
-document.getElementById("exampleButton").style.padding="1em";
+
+document.getElementById("side-nav-bar").style.display = "none";
+
+var menuContainer = document.getElementById("menu-container");
+menuContainer.classList.remove("col-lg-9");
+menuContainer.classList.remove("col-8");
+menuContainer.classList.add("col-12");
